@@ -1,0 +1,336 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Алина Флорист",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "phone": "+7 (900) 111-22-33",
+      "role": "admin",
+      "createdAt": "2026-03-23T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Мила Садовая",
+      "email": "user@gmail.com",
+      "password": "user123",
+      "phone": "+7 (900) 444-55-66",
+      "role": "user",
+      "createdAt": "2026-03-23T10:30:00.000Z"
+    },
+    {
+      "email": "wot@mail.ru",
+      "name": "Alina",
+      "password": "1234567",
+      "phone": "+7987654321",
+      "createdAt": "2026-03-24T18:28:17.084Z",
+      "role": "user",
+      "id": "WQIpSptqVAc"
+    }
+  ],
+  "products": [
+    {
+      "category": "bouquet",
+      "description": "Нежный букет из кремовых роз и эвкалипта.",
+      "image": "/product-images/bouquet-1.jpg",
+      "isAvailable": true,
+      "price": 4200,
+      "stock": 6,
+      "title": "Бархатный рассвет",
+      "tags": [
+        "обновлено"
+      ],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Белая роза",
+      "description": "Белая роза поштучно для составления собственного букета.",
+      "price": 240,
+      "image": "/product-images/flower-1.jpg",
+      "category": "flower",
+      "stock": 40,
+      "isAvailable": true,
+      "tags": [
+        "классика"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Мишка-компаньон",
+      "description": "Мягкая игрушка, которая отлично дополняет праздничный букет.",
+      "price": 1600,
+      "image": "/product-images/gift-1.jpg",
+      "category": "gift",
+      "stock": 9,
+      "isAvailable": true,
+      "tags": [
+        "подарок"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Пионовый сад",
+      "description": "Воздушный букет из пионов в пастельной гамме.",
+      "price": 5300,
+      "image": "/product-images/bouquet-2.jpg",
+      "category": "bouquet",
+      "stock": 4,
+      "isAvailable": true,
+      "tags": [
+        "новинка",
+        "нежность"
+      ]
+    },
+    {
+      "category": "flower",
+      "description": "Желтые тюльпаны поштучно для ярких весенних композиций.",
+      "image": "/product-images/flower-2.jpg",
+      "isAvailable": true,
+      "price": 180,
+      "stock": 56,
+      "title": "Солнечный тюльпан",
+      "tags": [
+        "обновлено"
+      ],
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "Открытка с лентой",
+      "description": "Открытка ручной работы с шелковой декоративной лентой.",
+      "price": 250,
+      "image": "/product-images/gift-2.jpg",
+      "category": "gift",
+      "stock": 20,
+      "isAvailable": true,
+      "tags": [
+        "дополнение"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Лавандовое облако",
+      "description": "Композиция с лавандой, розами и мягкой упаковкой.",
+      "price": 6100,
+      "image": "/product-images/bouquet-3.jpg",
+      "category": "bouquet",
+      "stock": 3,
+      "isAvailable": true,
+      "tags": [
+        "премиум"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Розовая гвоздика",
+      "description": "Нежная гвоздика поштучно для объемных бюджетных букетов.",
+      "price": 140,
+      "image": "/product-images/flower-3.jpg",
+      "category": "flower",
+      "stock": 70,
+      "isAvailable": true,
+      "tags": [
+        "нежность"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Стеклянная ваза",
+      "description": "Прозрачная ваза для готового букета или композиции.",
+      "price": 950,
+      "image": "/product-images/gift-3.jpg",
+      "category": "gift",
+      "stock": 11,
+      "isAvailable": true,
+      "tags": [
+        "дом"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Белый ранункулюс",
+      "description": "Элегантный цветок поштучно для авторских свадебных букетов.",
+      "price": 320,
+      "image": "/product-images/flower-4.jpg",
+      "category": "flower",
+      "stock": 24,
+      "isAvailable": true,
+      "tags": [
+        "свадьба"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Коробка макаронс",
+      "description": "Мини-набор макаронс как сладкое дополнение к заказу.",
+      "price": 790,
+      "image": "/product-images/gift-4.jpg",
+      "category": "gift",
+      "stock": 7,
+      "isAvailable": false,
+      "tags": [
+        "сладости"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Утренний сад",
+      "description": "Светлый букет для дня рождения с розами и эустомой.",
+      "price": 4700,
+      "image": "/product-images/bouquet-4.jpg",
+      "category": "bouquet",
+      "stock": 5,
+      "isAvailable": true,
+      "tags": [
+        "день рождения"
+      ]
+    },
+    {
+      "category": "flower",
+      "description": "Белая садовая ромашка",
+      "image": "/product-images/flower-5.jpg",
+      "isAvailable": true,
+      "price": 70,
+      "stock": 29,
+      "title": "Ромашка",
+      "tags": [
+        "новинка"
+      ],
+      "id": "b3owSjou9kA"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 2,
+      "items": [
+        {
+          "id": "1",
+          "title": "Бархатный рассвет",
+          "image": "/product-images/bouquet-1.jpg",
+          "price": 4200,
+          "quantity": 1,
+          "type": "product"
+        }
+      ],
+      "totalPrice": 4200,
+      "status": "confirmed",
+      "deliveryMethod": "pickup",
+      "createdAt": "2026-03-23T12:00:00.000Z"
+    },
+    {
+      "address": "Саратов, ул Алых роз",
+      "deliveryMethod": "delivery",
+      "items": [
+        {
+          "id": "5-1774289295927",
+          "image": "/product-images/flower-2.jpg",
+          "price": 180,
+          "quantity": 2,
+          "title": "Солнечный тюльпан",
+          "type": "product"
+        },
+        {
+          "id": "4-1774289301078",
+          "image": "/product-images/bouquet-2.jpg",
+          "price": 5300,
+          "quantity": 1,
+          "title": "Пионовый сад",
+          "type": "product"
+        },
+        {
+          "details": [
+            "Белая роза x1",
+            "Упаковка: Премиальная лента",
+            "Доп. услуга: Открытка"
+          ],
+          "id": "custom-bouquet-1774289399326",
+          "image": "/product-images/flower-1.jpg",
+          "price": 790,
+          "quantity": 1,
+          "title": "Авторский букет",
+          "type": "customBouquet"
+        }
+      ],
+      "totalPrice": 6450,
+      "userId": "2",
+      "createdAt": "2026-03-23T18:10:45.623Z",
+      "status": "new",
+      "id": "Ne3ufcUFHAQ"
+    },
+    {
+      "deliveryMethod": "pickup",
+      "items": [
+        {
+          "details": [
+            "Белый ранункулюс x2",
+            "Упаковка: Крафтовая упаковка",
+            "Доп. услуга: Открытка"
+          ],
+          "id": "custom-bouquet-1774377044265",
+          "image": "/product-images/flower-4.jpg",
+          "price": 1040,
+          "quantity": 1,
+          "title": "Авторский букет",
+          "type": "customBouquet"
+        }
+      ],
+      "totalPrice": 1040,
+      "userId": "WQIpSptqVAc",
+      "createdAt": "2026-03-24T18:31:02.676Z",
+      "status": "new",
+      "id": "VJEZ-y1ZUjA"
+    },
+    {
+      "address": "Cfhfn ",
+      "comment": "f",
+      "deliveryMethod": "delivery",
+      "items": [
+        {
+          "details": [
+            "Розовая гвоздика x2",
+            "Упаковка: Крафтовая упаковка",
+            "Доп. услуга: Открытка"
+          ],
+          "id": "custom-bouquet-1775031266099",
+          "image": "/product-images/flower-3.jpg",
+          "price": 680,
+          "quantity": 1,
+          "title": "Авторский букет",
+          "type": "customBouquet"
+        }
+      ],
+      "totalPrice": 680,
+      "userId": "2",
+      "createdAt": "2026-04-01T08:14:59.027Z",
+      "status": "new",
+      "id": "sjl3_KGqfkM"
+    }
+  ],
+  "packagingOptions": [
+    {
+      "id": "1",
+      "name": "Крафтовая упаковка",
+      "price": 250
+    },
+    {
+      "id": "2",
+      "name": "Премиальная лента",
+      "price": 400
+    }
+  ],
+  "extraServices": [
+    {
+      "id": "1",
+      "name": "Собрать букет",
+      "price": 500
+    },
+    {
+      "id": "2",
+      "name": "Открытка",
+      "price": 150
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

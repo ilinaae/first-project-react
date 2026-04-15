@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="10" x2="54" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6ED" />
+      <stop offset="1" stop-color="#F4E6D8" />
+    </linearGradient>
+    <linearGradient id="petal" x1="20" x2="44" y1="16" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D97B72" />
+      <stop offset="1" stop-color="#AA5D4E" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="24" x2="39" y1="34" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#59795F" />
+      <stop offset="1" stop-color="#3E5C45" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="18" fill="url(#bg)" />
+
+  <circle cx="32" cy="28" r="5.5" fill="#F6D5AE" />
+
+  <path
+    fill="url(#petal)"
+    d="M32 13c3.8 0 6.6 4.1 6 8.8-.7 4.6-3.5 8.2-6 8.2s-5.3-3.6-6-8.2C25.4 17.1 28.2 13 32 13Z"
+  />
+  <path
+    fill="url(#petal)"
+    d="M47 28c0 3.8-4.1 6.6-8.8 6-4.6-.7-8.2-3.5-8.2-6s3.6-5.3 8.2-6c4.7-.6 8.8 2.2 8.8 6Z"
+  />
+  <path
+    fill="url(#petal)"
+    d="M32 43c-3.8 0-6.6-4.1-6-8.8.7-4.6 3.5-8.2 6-8.2s5.3 3.6 6 8.2c.6 4.7-2.2 8.8-6 8.8Z"
+  />
+  <path
+    fill="url(#petal)"
+    d="M17 28c0-3.8 4.1-6.6 8.8-6 4.6.7 8.2 3.5 8.2 6s-3.6 5.3-8.2 6c-4.7.6-8.8-2.2-8.8-6Z"
+  />
+
+  <circle cx="32" cy="28" r="4.5" fill="#F3C98E" />
+
+  <path
+    stroke="url(#leaf)"
+    stroke-linecap="round"
+    stroke-width="3.8"
+    d="M32 38v12"
+  />
+  <path
+    fill="url(#leaf)"
+    d="M31 50c-5.5-5.7-11.8-4.6-14.4-2.7 1 4.2 7.4 8 14.4 2.7Z"
+  />
+  <path
+    fill="url(#leaf)"
+    d="M33 54c6.8-3.6 8.2-9.8 7.7-12.9-4.4-.1-9.5 3.8-7.7 12.9Z"
+  />
+</svg>

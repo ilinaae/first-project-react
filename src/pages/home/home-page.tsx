@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getProductsRequest } from '@/services/api/products-api.ts'
-import { ROUTES } from '@/constants/routes.ts'
+import { ROUTES } from '@/app/router/routes.ts'
 import type { Product } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
@@ -116,3 +116,4 @@ export function HomePage() {
     </section>
   )
 }
+

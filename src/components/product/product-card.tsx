@@ -1,4 +1,4 @@
-import type { Product } from '@/types/entities.ts'
+﻿import type { Product } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
 import { formatPrice } from '@/utils/format-price.ts'
@@ -48,3 +48,4 @@ export function ProductCard({ onAddToCart, product }: ProductCardProps) {
     </SurfaceCard>
   )
 }
+

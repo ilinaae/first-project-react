@@ -1,4 +1,4 @@
-export type UserRole = 'admin' | 'user'
+﻿export type UserRole = 'admin' | 'user'
 export type ProductCategory = 'bouquet' | 'flower' | 'gift'
 export type DeliveryMethod = 'delivery' | 'pickup'
 export type OrderStatus =
@@ -14,7 +14,6 @@ export type User = {
   email: string
   id: number
   name: string
-  password: string
   phone: string
   role: UserRole
 }

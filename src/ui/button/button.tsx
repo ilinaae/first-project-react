@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, PropsWithChildren } from 'react'
+﻿import type { ButtonHTMLAttributes, PropsWithChildren } from 'react'
 import clsx from 'clsx'
 
 type ButtonVariant = 'ghost' | 'primary' | 'secondary'
@@ -24,3 +24,4 @@ export function Button({
     </button>
   )
 }
+

@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes } from 'react'
+﻿import type { InputHTMLAttributes } from 'react'
 import clsx from 'clsx'
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
@@ -28,3 +28,4 @@ export function Input({
     </label>
   )
 }
+

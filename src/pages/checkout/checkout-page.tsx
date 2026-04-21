@@ -1,9 +1,9 @@
-import { useMemo } from 'react'
+﻿import { useMemo } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { Navigate, useNavigate } from 'react-router-dom'
-import { ROUTES } from '@/constants/routes.ts'
-import { createOrder } from '@/store/orders-slice.ts'
-import { useAppDispatch, useAppSelector } from '@/store/hooks.ts'
+import { ROUTES } from '@/app/router/routes.ts'
+import { createOrder } from '@/app/store/orders-slice.ts'
+import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
 import type { CheckoutPayload, DeliveryMethod } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { Input } from '@/ui/input/input.tsx'
@@ -159,3 +159,4 @@ export function CheckoutPage() {
     </section>
   )
 }
+

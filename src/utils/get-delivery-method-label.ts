@@ -1,4 +1,4 @@
-import type { DeliveryMethod } from '@/types/entities.ts'
+﻿import type { DeliveryMethod } from '@/types/entities.ts'
 
 const deliveryLabelMap: Record<DeliveryMethod, string> = {
   delivery: 'Доставка',
@@ -8,3 +8,4 @@ const deliveryLabelMap: Record<DeliveryMethod, string> = {
 export function getDeliveryMethodLabel(method: DeliveryMethod) {
   return deliveryLabelMap[method]
 }
+

@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "server": "json-server --watch db.json --port 3001",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend:start": "cd backend && .venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "backend:migrate": "cd backend && .venv\\Scripts\\alembic.exe upgrade head",
+    "backend:seed": "cd backend && .venv\\Scripts\\python.exe seed_demo_users.py && .venv\\Scripts\\python.exe seed_demo_products.py && .venv\\Scripts\\python.exe seed_demo_orders.py && .venv\\Scripts\\python.exe seed_catalog_options.py"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
@@ -33,7 +35,6 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
-    "json-server": "^1.0.0-beta.14",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.0",
     "vite": "^8.0.1"

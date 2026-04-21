@@ -1,4 +1,4 @@
-import type { OrderStatus } from '@/types/entities.ts'
+﻿import type { OrderStatus } from '@/types/entities.ts'
 
 const statusLabelMap: Record<OrderStatus, string> = {
   assembling: 'Собирается',
@@ -12,3 +12,4 @@ const statusLabelMap: Record<OrderStatus, string> = {
 export function getOrderStatusLabel(status: OrderStatus) {
   return statusLabelMap[status]
 }
+

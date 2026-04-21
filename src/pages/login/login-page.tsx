@@ -1,10 +1,10 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { AuthCard } from '@/components/auth/auth-card.tsx'
-import { ROUTES } from '@/constants/routes.ts'
-import { useAppDispatch, useAppSelector } from '@/store/hooks.ts'
-import { loginUser } from '@/store/user-slice.ts'
+import { ROUTES } from '@/app/router/routes.ts'
+import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
+import { loginUser } from '@/app/store/user-slice.ts'
 import type { LoginPayload } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { Input } from '@/ui/input/input.tsx'
@@ -103,3 +103,4 @@ export function LoginPage() {
     </AuthCard>
   )
 }
+

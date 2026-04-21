@@ -1,14 +1,14 @@
-import { useEffect, useMemo, useState } from 'react'
+﻿import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   getExtraServicesRequest,
   getFlowersRequest,
   getPackagingOptionsRequest,
 } from '@/services/api/builder-api.ts'
-import { ROUTES } from '@/constants/routes.ts'
-import { addCartItem } from '@/store/cart-slice.ts'
-import { useAppDispatch } from '@/store/hooks.ts'
-import { setGlobalError, setGlobalLoading } from '@/store/settings-slice.ts'
+import { ROUTES } from '@/app/router/routes.ts'
+import { addCartItem } from '@/app/store/cart-slice.ts'
+import { useAppDispatch } from '@/hooks/storeHooks.ts'
+import { setGlobalError, setGlobalLoading } from '@/app/store/settings-slice.ts'
 import type { ExtraService, PackagingOption, Product } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
@@ -327,3 +327,4 @@ export function BuilderPage() {
     </section>
   )
 }
+

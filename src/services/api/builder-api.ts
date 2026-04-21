@@ -1,20 +1,20 @@
-import { axiosInstance } from '@/services/api/axios-instance.ts'
+﻿import { authAxiosInstance } from '@/services/api/auth-axios-instance.ts'
 import type { ExtraService, PackagingOption, Product } from '@/types/entities.ts'
 
-export async function getFlowersRequest() {
-  const response = await axiosInstance.get<Product[]>('/products', {
+export async function getFlowersRequest(): Promise<Product[]> {
+  const response = await authAxiosInstance.get<Product[]>('/products', {
     params: { category: 'flower' },
   })
 
   return response.data
 }
 
-export async function getPackagingOptionsRequest() {
-  const response = await axiosInstance.get<PackagingOption[]>('/packagingOptions')
+export async function getPackagingOptionsRequest(): Promise<PackagingOption[]> {
+  const response = await authAxiosInstance.get<PackagingOption[]>('/packaging-options')
   return response.data
 }
 
-export async function getExtraServicesRequest() {
-  const response = await axiosInstance.get<ExtraService[]>('/extraServices')
+export async function getExtraServicesRequest(): Promise<ExtraService[]> {
+  const response = await authAxiosInstance.get<ExtraService[]>('/extra-services')
   return response.data
 }

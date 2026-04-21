@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+﻿import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import {
   createProductRequest,
@@ -7,8 +7,8 @@ import {
   patchProductAvailabilityRequest,
   updateProductRequest,
 } from '@/services/api/admin-api.ts'
-import { useAppDispatch } from '@/store/hooks.ts'
-import { setGlobalError, setGlobalLoading } from '@/store/settings-slice.ts'
+import { useAppDispatch } from '@/hooks/storeHooks.ts'
+import { setGlobalError, setGlobalLoading } from '@/app/store/settings-slice.ts'
 import type { Product, ProductCategory, ProductFormValues } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { Input } from '@/ui/input/input.tsx'
@@ -379,3 +379,4 @@ export function AdminProductsPage() {
     </section>
   )
 }
+

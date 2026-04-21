@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { fetchUserOrders } from '@/store/orders-slice.ts'
-import { updateUserProfile } from '@/store/user-slice.ts'
-import { useAppDispatch, useAppSelector } from '@/store/hooks.ts'
+import { fetchUserOrders } from '@/app/store/orders-slice.ts'
+import { updateUserProfile } from '@/app/store/user-slice.ts'
+import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { Input } from '@/ui/input/input.tsx'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
@@ -167,3 +167,4 @@ export function ProfilePage() {
     </section>
   )
 }
+

@@ -1,4 +1,4 @@
-export function Loader() {
+﻿export function Loader() {
   return (
     <div className="loader-overlay" aria-live="polite" aria-label="Приложение загружается">
       <div className="loader-panel">
@@ -8,3 +8,4 @@ export function Loader() {
     </div>
   )
 }
+

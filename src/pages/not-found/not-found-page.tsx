@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { ROUTES } from '@/constants/routes.ts'
+﻿import { Link } from 'react-router-dom'
+import { ROUTES } from '@/app/router/routes.ts'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
 
 export function NotFoundPage() {
@@ -20,3 +20,4 @@ export function NotFoundPage() {
     </section>
   )
 }
+

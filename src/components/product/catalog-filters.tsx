@@ -1,4 +1,4 @@
-import { Button } from '@/ui/button/button.tsx'
+﻿import { Button } from '@/ui/button/button.tsx'
 import { Input } from '@/ui/input/input.tsx'
 
 type CatalogFiltersProps = {
@@ -40,3 +40,4 @@ export function CatalogFilters({
     </div>
   )
 }
+

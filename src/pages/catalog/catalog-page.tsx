@@ -1,18 +1,18 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CatalogFilters } from '@/components/product/catalog-filters.tsx'
 import { ProductCard } from '@/components/product/product-card.tsx'
 import { ProductEmptyState } from '@/components/product/product-empty-state.tsx'
-import { ROUTES } from '@/constants/routes.ts'
+import { ROUTES } from '@/app/router/routes.ts'
 import {
   fetchProducts,
   resetCatalogFilters,
   setSearchTerm,
   setShowOnlyAvailable,
-} from '@/store/products-slice.ts'
-import { addCartItem } from '@/store/cart-slice.ts'
-import { useAppDispatch, useAppSelector } from '@/store/hooks.ts'
-import { setGlobalError } from '@/store/settings-slice.ts'
+} from '@/app/store/products-slice.ts'
+import { addCartItem } from '@/app/store/cart-slice.ts'
+import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
+import { setGlobalError } from '@/app/store/settings-slice.ts'
 import type { Product, ProductCategory } from '@/types/entities.ts'
 
 type CatalogPageProps = {
@@ -110,3 +110,4 @@ export function CatalogPage({ category }: CatalogPageProps) {
     </section>
   )
 }
+

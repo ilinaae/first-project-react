@@ -1,4 +1,4 @@
-import { Button } from '@/ui/button/button.tsx'
+﻿import { Button } from '@/ui/button/button.tsx'
 
 type ErrorModalProps = {
   message: string
@@ -18,3 +18,4 @@ export function ErrorModal({ message, onClose }: ErrorModalProps) {
     </div>
   )
 }
+

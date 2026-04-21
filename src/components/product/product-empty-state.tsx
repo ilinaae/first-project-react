@@ -1,4 +1,4 @@
-import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
+﻿import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
 
 type ProductEmptyStateProps = {
   description: string
@@ -12,3 +12,4 @@ export function ProductEmptyState({ description }: ProductEmptyStateProps) {
     </SurfaceCard>
   )
 }
+

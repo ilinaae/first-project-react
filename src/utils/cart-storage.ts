@@ -1,4 +1,4 @@
-import type { CartState } from '@/types/entities.ts'
+﻿import type { CartState } from '@/types/entities.ts'
 
 const CART_STORAGE_KEY = 'flora-boutique-cart'
 
@@ -23,3 +23,4 @@ export function setStoredCart(cart: CartState) {
 export function clearStoredCart() {
   window.localStorage.removeItem(CART_STORAGE_KEY)
 }
+

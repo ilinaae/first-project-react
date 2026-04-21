@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import { ROUTES } from '@/constants/routes.ts'
-import { useAppSelector } from '@/store/hooks.ts'
+﻿import { Link } from 'react-router-dom'
+import { ROUTES } from '@/app/router/routes.ts'
+import { useAppSelector } from '@/hooks/storeHooks.ts'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
 import { formatPrice } from '@/utils/format-price.ts'
 import { getOrderStatusLabel } from '@/utils/get-order-status-label.ts'
@@ -83,3 +83,4 @@ export function DashboardPage() {
     </section>
   )
 }
+

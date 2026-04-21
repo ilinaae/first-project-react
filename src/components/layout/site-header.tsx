@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import clsx from 'clsx'
 import { Link, NavLink } from 'react-router-dom'
-import { ROUTES } from '@/constants/routes.ts'
-import { useAppDispatch, useAppSelector } from '@/store/hooks.ts'
-import { logoutUser } from '@/store/user-slice.ts'
+import { ROUTES } from '@/app/router/routes.ts'
+import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
+import { logoutUser } from '@/app/store/user-slice.ts'
 import { Button } from '@/ui/button/button.tsx'
 
 const guestActions = [
@@ -139,3 +139,4 @@ export function SiteHeader() {
     </header>
   )
 }
+

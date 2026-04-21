@@ -1,4 +1,4 @@
-import type { Product } from '@/types/entities.ts'
+﻿import type { Product } from '@/types/entities.ts'
 
 const categoryLabelMap: Record<Product['category'], string> = {
   bouquet: 'Букет',

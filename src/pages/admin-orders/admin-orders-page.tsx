@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+﻿import { useCallback, useEffect, useMemo, useState } from 'react'
 import { getAllOrdersRequest, patchOrderStatusRequest } from '@/services/api/admin-api.ts'
-import { useAppDispatch } from '@/store/hooks.ts'
-import { setGlobalError, setGlobalLoading } from '@/store/settings-slice.ts'
+import { useAppDispatch } from '@/hooks/storeHooks.ts'
+import { setGlobalError, setGlobalLoading } from '@/app/store/settings-slice.ts'
 import type { Order, OrderStatus } from '@/types/entities.ts'
 import { Button } from '@/ui/button/button.tsx'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
@@ -132,3 +132,4 @@ export function AdminOrdersPage() {
     </section>
   )
 }
+

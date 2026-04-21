@@ -1,4 +1,4 @@
-import type { ExtraService, PackagingOption, Product } from '@/types/entities.ts'
+﻿import type { ExtraService, PackagingOption, Product } from '@/types/entities.ts'
 
 export function calculateBuilderTotal(args: {
   extras: ExtraService[]
@@ -15,3 +15,4 @@ export function calculateBuilderTotal(args: {
 
   return flowersTotal + packagingTotal + extrasTotal
 }
+

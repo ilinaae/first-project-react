@@ -1,4 +1,4 @@
-import type { User } from '@/types/entities.ts'
+﻿import type { User } from '@/types/entities.ts'
 
 const ACCESS_TOKEN_STORAGE_KEY = 'flora-boutique-access-token'
 const REFRESH_TOKEN_STORAGE_KEY = 'flora-boutique-refresh-token'

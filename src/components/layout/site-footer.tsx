@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { ROUTES } from '@/constants/routes.ts'
+﻿import { Link } from 'react-router-dom'
+import { ROUTES } from '@/app/router/routes.ts'
 
 const footerLinks = [
   { label: 'Букеты', to: ROUTES.catalogBouquets },
@@ -34,3 +34,4 @@ export function SiteFooter() {
     </footer>
   )
 }
+

@@ -1,51 +1,46 @@
-import { axiosInstance } from '@/services/api/axios-instance.ts'
+﻿import { authAxiosInstance } from '@/services/api/auth-axios-instance.ts'
 import type { Order, OrderStatus, Product, ProductFormValues } from '@/types/entities.ts'
 
-export async function getAllProductsRequest() {
-  const response = await axiosInstance.get<Product[]>('/products')
+export async function getAllProductsRequest(): Promise<Product[]> {
+  const response = await authAxiosInstance.get<Product[]>('/products')
   return response.data
 }
 
-export async function createProductRequest(payload: ProductFormValues) {
-  const response = await axiosInstance.post<Product>('/products', {
-    ...payload,
-    tags: ['новинка'],
-  })
-
+export async function createProductRequest(payload: ProductFormValues): Promise<Product> {
+  const response = await authAxiosInstance.post<Product>('/products', payload)
   return response.data
 }
 
-export async function updateProductRequest(productId: number, payload: ProductFormValues) {
-  const response = await axiosInstance.put<Product>(`/products/${productId}`, {
-    ...payload,
-    tags: ['обновлено'],
-  })
-
+export async function updateProductRequest(
+  productId: number,
+  payload: ProductFormValues,
+): Promise<Product> {
+  const response = await authAxiosInstance.put<Product>(`/products/${productId}`, payload)
   return response.data
 }
 
 export async function patchProductAvailabilityRequest(
   productId: number,
   isAvailable: boolean,
-) {
-  const response = await axiosInstance.patch<Product>(`/products/${productId}`, {
+): Promise<Product> {
+  const response = await authAxiosInstance.patch<Product>(`/products/${productId}`, {
     isAvailable,
   })
 
   return response.data
 }
 
-export async function deleteProductRequest(productId: number) {
-  await axiosInstance.delete(`/products/${productId}`)
+export async function deleteProductRequest(productId: number): Promise<void> {
+  await authAxiosInstance.delete(`/products/${productId}`)
 }
 
-export async function getAllOrdersRequest() {
-  const response = await axiosInstance.get<Order[]>('/orders')
+export async function getAllOrdersRequest(): Promise<Order[]> {
+  const response = await authAxiosInstance.get<Order[]>('/orders')
   return response.data
 }
 
-export async function patchOrderStatusRequest(orderId: number, status: OrderStatus) {
-  const response = await axiosInstance.patch<Order>(`/orders/${orderId}`, {
+export async function patchOrderStatusRequest(orderId: number, status: OrderStatus): Promise<Order> {
+  const response = await authAxiosInstance.patch<Order>(`/orders/${orderId}`, {
     status,
   })
 

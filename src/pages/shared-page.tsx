@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 import { SurfaceCard } from '@/ui/surface/surface-card.tsx'
 import { Button } from '@/ui/button/button.tsx'
-import { ROUTES } from '@/constants/routes.ts'
+import { ROUTES } from '@/app/router/routes.ts'
 
 type SharedPageProps = {
   description: string
@@ -58,3 +58,4 @@ export function SharedPage({
     </section>
   )
 }
+

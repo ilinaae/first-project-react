@@ -19,3 +19,4 @@ export function ErrorModal({ message, onClose }: ErrorModalProps) {
   )
 }
 
+

@@ -58,3 +58,4 @@ export function getProductImageSrc(product: Product) {
 
   return createFallbackSvg(product)
 }
+

@@ -13,3 +13,4 @@ export function ProductEmptyState({ description }: ProductEmptyStateProps) {
   )
 }
 
+

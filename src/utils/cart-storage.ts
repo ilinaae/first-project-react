@@ -24,3 +24,4 @@ export function clearStoredCart() {
   window.localStorage.removeItem(CART_STORAGE_KEY)
 }
 
+

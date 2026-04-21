@@ -34,3 +34,4 @@ export async function updateUserRequest(
   const response = await authAxiosInstance.patch<User>('/auth/me', payload)
   return response.data
 }
+

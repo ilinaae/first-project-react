@@ -8,3 +8,4 @@ export async function getProductsRequest(category?: ProductCategory): Promise<Pr
 
   return response.data
 }
+

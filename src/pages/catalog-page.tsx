@@ -111,3 +111,4 @@ export function CatalogPage({ category }: CatalogPageProps) {
   )
 }
 
+

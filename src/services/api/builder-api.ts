@@ -18,3 +18,4 @@ export async function getExtraServicesRequest(): Promise<ExtraService[]> {
   const response = await authAxiosInstance.get<ExtraService[]>('/extra-services')
   return response.data
 }
+

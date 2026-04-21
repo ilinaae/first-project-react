@@ -11,3 +11,4 @@ export const registerSchema = z.object({
   password: z.string().min(6, 'Пароль должен содержать не менее 6 символов.'),
   phone: z.string().min(10, 'Укажите телефон для связи.'),
 })
+

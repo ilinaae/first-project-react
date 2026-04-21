@@ -1,4 +1,5 @@
 ﻿import { createAsyncThunk, createSlice, type PayloadAction } from '@reduxjs/toolkit'
+import type { RootState } from '@/app/store/store.ts'
 import { getProductsRequest } from '@/services/api/products-api.ts'
 import type { ProductCategory, ProductsState } from '@/types/entities.ts'
 import { hideGlobalError, setGlobalError } from '@/app/store/settings-slice.ts'
@@ -79,6 +80,7 @@ export const {
 } = productsSlice.actions
 export const productsReducer = productsSlice.reducer
 
-
-
-
+export const selectProducts = (state: RootState) => state.products
+export const selectProductItems = (state: RootState) => state.products.items
+export const selectProductsStatus = (state: RootState) => state.products.status
+export const selectCurrentCategory = (state: RootState) => state.products.currentCategory

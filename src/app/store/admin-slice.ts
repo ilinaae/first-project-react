@@ -1,4 +1,5 @@
 ﻿import { createSlice } from '@reduxjs/toolkit'
+import type { RootState } from '@/app/store/store.ts'
 
 type AdminState = {
   activeSection: 'products' | 'orders'
@@ -24,6 +25,5 @@ const adminSlice = createSlice({
 export const { setAdminSection } = adminSlice.actions
 export const adminReducer = adminSlice.reducer
 
-
-
-
+export const selectAdmin = (state: RootState) => state.admin
+export const selectAdminSection = (state: RootState) => state.admin.activeSection

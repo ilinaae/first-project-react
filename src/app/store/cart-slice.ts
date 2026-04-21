@@ -1,4 +1,5 @@
 ﻿import { createSlice, type PayloadAction } from '@reduxjs/toolkit'
+import type { RootState } from '@/app/store/store.ts'
 import type { CartItem, CartState } from '@/types/entities.ts'
 import { calculateCartTotal } from '@/utils/calculate-cart-total.ts'
 import { clearStoredCart, getStoredCart, setStoredCart } from '@/utils/cart-storage.ts'
@@ -72,6 +73,6 @@ export const {
 } = cartSlice.actions
 export const cartReducer = cartSlice.reducer
 
-
-
-
+export const selectCart = (state: RootState) => state.cart
+export const selectCartItems = (state: RootState) => state.cart.items
+export const selectCartTotal = (state: RootState) => state.cart.total

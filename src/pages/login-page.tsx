@@ -1,6 +1,6 @@
 ﻿import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { AuthCard } from '@/components/auth/auth-card.tsx'
 import { ROUTES } from '@/app/router/routes.ts'
 import { useAppDispatch, useAppSelector } from '@/hooks/storeHooks.ts'
@@ -14,7 +14,7 @@ export function LoginPage() {
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
   const location = useLocation()
-  const { authStatus, isAuthorized, isSessionResolved, profile } = useAppSelector((state) => state.user)
+  const { authStatus, isSessionResolved } = useAppSelector((state) => state.user)
   const [formError, setFormError] = useState<string | null>(null)
   const {
     formState: { errors },
@@ -31,15 +31,6 @@ export function LoginPage() {
     return null
   }
 
-  if (isAuthorized) {
-    return (
-      <Navigate
-        replace
-        to={profile?.role === 'admin' ? ROUTES.adminProducts : ROUTES.dashboard}
-      />
-    )
-  }
-
   const onSubmit = handleSubmit(async (values) => {
     setFormError(null)
 
@@ -54,11 +45,7 @@ export function LoginPage() {
 
     if (loginUser.fulfilled.match(resultAction)) {
       const from = location.state as { from?: string } | null
-      const nextPath =
-        resultAction.payload.role === 'admin'
-          ? ROUTES.adminProducts
-          : from?.from ?? ROUTES.dashboard
-
+      const nextPath = from?.from ?? ROUTES.dashboard
       navigate(nextPath, { replace: true })
     }
   })
@@ -103,5 +90,3 @@ export function LoginPage() {
     </AuthCard>
   )
 }
-
-

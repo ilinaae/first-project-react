@@ -233,3 +233,8 @@ export const { clearUserState, setAuthStatus, setSessionResolved, setUserSession
   userSlice.actions
 export const userReducer = userSlice.reducer
 
+export const selectUser = (state: RootState) => state.user
+export const selectUserProfile = (state: RootState) => state.user.profile
+export const selectIsAuthorized = (state: RootState) => state.user.isAuthorized
+export const selectIsSessionResolved = (state: RootState) => state.user.isSessionResolved
+export const selectAuthStatus = (state: RootState) => state.user.authStatus

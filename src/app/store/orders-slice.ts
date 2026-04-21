@@ -1,4 +1,5 @@
 ﻿import { createAsyncThunk, createSlice, type PayloadAction } from '@reduxjs/toolkit'
+import type { RootState } from '@/app/store/store.ts'
 import { createOrderRequest, getOrdersByUserIdRequest } from '@/services/api/orders-api.ts'
 import { clearCart } from '@/app/store/cart-slice.ts'
 import { hideGlobalError, setGlobalError, setGlobalLoading } from '@/app/store/settings-slice.ts'
@@ -79,6 +80,6 @@ export const { prependUserOrder, resetOrdersState, setAdminOrders, setUserOrders
   ordersSlice.actions
 export const ordersReducer = ordersSlice.reducer
 
-
-
-
+export const selectOrders = (state: RootState) => state.orders
+export const selectUserOrders = (state: RootState) => state.orders.userOrders
+export const selectAdminOrders = (state: RootState) => state.orders.adminOrders
